@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo 1 - Uso Básico de JavaScript</h1>
+    </header>
+    <main>
+       <form action="" method="post">
+           <label for="name">Nombre:</label>
+           <input type="text" name="name" id="name">
+           <button type="submit">Enviar</button>
+         </form>
+    </main>
+    <footer>
+        <h4>Diseño Web y Comercio Electronico - UAM</h4>
+    </footer>
+    <script>
+        // Seleccionar el formulario
+        const form = document.querySelector('form');
+        // Seleccionar el input
+        const input = document.querySelector('input');
+        // Seleccionar el botón
+        const button = document.querySelector('button');
+        // Agregar un evento al formulario
+        form.addEventListener('submit', (event) => {
+            // Prevenir el comportamiento por defecto
+            event.preventDefault();
+            // Mostrar un mensaje usando alert
+            alert(`Hola ${input.value}`);
+        });
+    </script>
+</body>
+</html>
