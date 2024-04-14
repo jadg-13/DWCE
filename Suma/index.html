@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar - UAM</title>
+</head>
+<body>
+    <header>
+        <h1>Sumar dos números</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="num1">Número 1:</label>
+            <input type="number" name="num1" id="num1">
+            <label for="num2">Número 2:</label>
+            <input type="number" name="num2" id="num2">
+            <button type="submit">Sumar</button>
+        </form>
+        <p>El resultado es: <span id="result"></span></p>
+    </main>
+    <footer>
+        <h4>Diseño Web y Comercio Electronico - UAM</h4>
+    </footer>
+    <script>
+        // Seleccionar el formulario
+        const form = document.querySelector('form');
+        // Seleccionar el input
+        const num1 = document.querySelector('#num1');
+        const num2 = document.querySelector('#num2');
+        // Seleccionar el botón
+        const button = document.querySelector('button');
+        // Seleccionar el span
+        const result = document.querySelector('#result');
+        // Agregar un evento al formulario
+        form.addEventListener('submit', (event) => {
+            // Prevenir el comportamiento por defecto
+            event.preventDefault();
+            // Mostrar un mensaje usando alert
+            result.textContent = parseInt(num1.value) + parseInt(num2.value);
+        });
+    </script>
+</body>
+</html>
