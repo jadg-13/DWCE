@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the content */
+.container {
+  display: flex;
+  align-items: center;
+  /* Add padding */
+  padding: 25px;
+  /* add margin */
+  margin: 25px;
+  /* Add flexbox properties */
+  flex-direction: column;
+  /* Add border*/
+  border: 15px solid #ccc;
+  /* Add border radius */
+  border-radius: 10px;
+  /* Add box shadow */
+  box-shadow: 0 0 10px rgba(236, 209, 38, 0.639);
+}
+
+.title-card {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.body-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.body-card label {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.body-card input {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  /* Add border radius */
+  border-radius: 15px;
+}
+
+.body-card select {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  /* Add border radius */
+  border-radius: 15px;
+}
+
+.body-card button {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  background-color: #333;
+  /* Add border radius */
+  border-radius: 15px;
+  /* Add border */
+  border: none;
+}
+
+.body-card button:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+  /*reesplandor en las letras*/
+  text-shadow: 2px 2px 4px #ffed2b;
+}
+
+/* Style the paragraph */
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.tbl-container {
+  width: 100%;
+  background-color: #2e8dec;
+  border-radius: 10px;
+    padding: 10px;
+}
+
+.tbl table-data {
+  width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}

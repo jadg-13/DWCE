@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="JADG13">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Datos Personales</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="title-card">
+                <h2>Ingresa tus datos personales</h2>
+
+            </div>
+            <div class="body-card">
+                <form action="" method="">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Ingresa tu apellido" required>
+                    <label for="bday">Fecha de Nacimmiento</label>
+                    <input type="date" name="bday" id="bday" required>
+                    <label for="age">Edad:</label>
+                    <input type="number" name="age" id="age" readonly>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+                    <label for="sex">Sexo:</label>
+                    <!-- dropdown sex -->
+                    <select name="sex" id="sex">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                    <button type="submit" id="btnAdd">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Diseño Web y Comercio Electrónico - UAM</h4>
+    </footer>
+</body>
+<script src="js/operations.js"></script>
+
+
+
+
+</html>
